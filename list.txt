@@ -1,0 +1,10 @@
+Brand Name,brand_name
+Item Name,item_name
+Sugar,nf_sugars
+Total Fat,nf_total_fat
+Carbohydrates,nf_total_carbohydrate
+Proteins,nf_protein
+Calories,nf_calories
+Calcium,nf_calcium_dv
+Cholestrol,nf_cholesterol
+Vitamin C,nf_vitamin_c_dv

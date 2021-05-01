@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GoDiet</title>
+	<link rel="stylesheet" href="static/css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="static/css/mobile.css">
+	<script src="static/js/mobile.js" type="text/javascript"></script>
+	<script src='static/js/js.js'></script>	
+	<style>
+	
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #4aaaa5;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+#choose{
+	margin-left:100px;
+}
+#submit1{
+margin-left:330px;
+}
+#choose1{
+	margin-left:100px;
+	width:510px;
+}
+#submit2{
+margin-left:330px;
+}
+.dark{
+width:100%;
+height:100%;
+position:fixed;
+background-color:black;
+z-index:3;
+opacity:.8;
+display:none;
+
+}
+.loading{
+width:250px;
+height:250px;
+position:fixed;
+z-index:4;
+background-image:url(static/images/loading.gif);
+background-size:contain;
+background-repeat:no-repeat;
+top:30%;
+left:40%;
+display:none;
+
+}
+	</style>
+</head>
+<body>
+<div class="dark">hi
+</div>
+<div class="loading">
+</div>
+	<a href="index.html" class="logo"><div id="logo1"></div></a>
+	<div id="bg-text"></div>
+	<div id="page">
+		<div id="header">
+			<div>
+				
+				<ul id="navigation">
+					<li class="selected">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="menu">
+						<a href="about.html">About</a>
+					</li>
+					
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="home">
+			<div class="header">
+				<img src="static/images/bg-home.jpg" alt="">
+				<div>
+					
+				</div>
+			</div>
+
+	
+
+			<center>
+			<div class="footer" style="background-color: #EFEDEE;">
+				
+				<div class="section">
+					
+					<div class="subslider" id="slider1">
+					      <form action = "http://localhost/upload" method = "POST" enctype = "multipart/form-data">
+								<b><font color=#E32A62><center><label class="label">Upload Image:</label> </center></font></b>
+								<br>
+								<CENTER><input id="choose" class="action-button shadow animate blue" type = "file" name = "file" />
+								<br><br><BR><BR><BR>
+								<input id="submit1" class="action-button shadow animate blue submit" type = "submit" /></CENTER>
+							</form>
+							<BR><BR><BR><BR><BR>
+							
+							<BR>
+							<form action = "http://localhost/upload_link" method = "POST" enctype = "multipart/form-data">
+								<b><font color=#E32A62><center><label class="label">Image URL:</label> </center></font></b>
+								<br>
+								<CENTER><input id="choose1" class="action-button shadow animate blue" type = "text" name = "text" />
+								<br><br><BR><BR><BR>
+								<input id="submit2" class="action-button shadow animate blue submit" type = "submit" /></CENTER>
+							</form>
+					</div>	
+
+
+
+				</div>
+				
+			</div>
+			</center>
+
+
+
+
+			<div class="body">
+				<div>
+					<div>
+						<h1>Go-Diet</h1>
+						<h2>Feel Good About Yourself Today, Remember That Change Takes Time</h2>
+						<p>Know about the nutritional values of the things you eat.</p>
+					</div>
+					<img src="static/images/yogurt.jpg" alt="">
+				</div>
+			</div>
+		
+<script>
+
+
+document.getElementById('submit1').addEventListener('click',function(e){
+	   
+	   
+	   $('.dark').show();
+	   $('.loading').show();
+	   });
+document.getElementById('submit2').addEventListener('click',function(e){
+	   
+	   
+	   $('.dark').show();
+	   $('.loading').show();
+	   });
+/*function display(){
+$('.submit').on('click',function(e){
+		
+			$('.dark').show()
+		$('.loading').show();
+		});
+
+}
+
+	$(document).ready(function(e){
+		
+		$('.submit').on('click',function(e){
+		
+			$('.dark').show()
+		$('.loading').show();
+		});
+	
+	
+	});*/
+</script>	
+</body>
+
+</html>

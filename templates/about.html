@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>about - Frozen Yogurt Shop</title>
+	<link rel="stylesheet" href="static/css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="static/css/mobile.css">
+	<script src="static/js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="static/images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="menu selected">
+						<a href="about.html">About</a>
+					</li>
+				
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>About</h1>
+				</div>
+			</div>
+			<div class="body">
+				<img src="static/images/bg-header-about.jpg" alt="">
+			</div>
+			<div class="footer">
+				<div class="sidebar">
+					<h1>Objective</h1>
+					<p>The goal of our web application is to track nutritional content of what you consume with a simple snap of your food item. The website processes the image of a food item, retrieves nutritional content of the food item.</p>
+				</div>
+				<div class="article">
+					<h1>Tech Stack</h1>
+					<p>We used Python (Flask) for our API. We have used CloudSight and NutritionX API.Other technical knowledge which was required was that of HTML5, CSS, Python, Flask, JavaScript</p>
+					<h1>User Flow</h1>
+					<p>We built our core website on Flask(Python) and hosted it on Heroku. The image is sent as multipart data from website as a POST request to /upload endpoint which calls CloudSIght API to retrieve food item name and then NutritionX API is called to retrieve relevant nutritional data of that item.</p>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
